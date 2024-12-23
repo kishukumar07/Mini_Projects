@@ -232,7 +232,6 @@ z-index: 1 ;
  .input_box input:focus~label,
  .input_box input:valid~label{
     top: -5px;
-
  }
 
 
