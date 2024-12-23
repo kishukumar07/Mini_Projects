@@ -29,34 +29,86 @@
 
 <!-- //login box /body of loginpage  -->
 <div class="wrapper">
-       <div class="form-box"> 
+ 
+    <span class="icon-close"><ion-icon name="close-outline"></ion-icon>
+    </span>
+
+ <!-- login form box -->
+       <div class="form-box login"> 
         <h2>Login</h2> 
         <form action="#"> 
-            <div class="input.box">
+            <div class="input_box">
                 <!-- span is used for icon -->
                 <span class="icon"><ion-icon name="mail"></ion-icon></span> 
                  <input type="email" required >
                  <label>Email </label>
             </div>
             <!-- copiyng -->
-            <div class="input.box">
+            <div class="input_box">
                 <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
                  <input type="password" required >
                  <label>Password </label>
             </div>
+
+
             <!-- remember-forgotpart  -->
             <div class="remember-forgot">
                 <label > <input type="checkbox" >Remember-me</label>
                 <a href="#">Forgot Password?</a>
             </div>
             <!-- submitpart btn /loginbtn-->
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn">
+               Login
+            </button>
         <div class="login-regester"> 
             <p>Don't have an account ? <a href="#" class="regester-link">Register</a></p>
         </div>
 
         </form>   
     </div>
+
+    <!-- copied  with some modification to above login div code Register form box  -->
+    <div class="form-box register"> 
+        <h2>Resistration</h2> 
+        <form action="#">
+            <div class="input_box">
+                <!-- span is used for icon -->
+                <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span> 
+                 <input type="text" required >
+                 <label>Username</label>
+            </div>
+            <!-- copiyng-pasting avobe div  -->
+            <div class="input_box">
+                <!-- span is used for icon -->
+                <span class="icon"><ion-icon name="mail"></ion-icon></span> 
+                 <input type="email" required >
+                 <label>Email </label>
+            </div>
+            <!-- copiyng -->
+            <div class="input_box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                 <input type="password" required >
+                 <label>Password </label>
+            </div>
+
+
+            <!-- remember-forgotpart  -->
+            <div class="remember-forgot">
+                <label > <input type="checkbox" >Agree to the terms & conditions</label>
+                
+            </div>
+            <!-- submitpart btn /loginbtn-->
+            <button type="submit" class="btn">
+              Register
+            </button>
+        <div class="login-regester"> 
+            <p>Already have an account ? <a href="#" class="login-link">Login</a></p>
+        </div>
+
+        </form>   
+    </div>
+
+
 </div>
 
 
