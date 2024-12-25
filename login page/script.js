@@ -28,9 +28,13 @@ iconClose.addEventListener('click', ()=>{
 }); 
 
 
-let hamburger = document.getElementById("hamburger"); 
+// let hamburger = document.getElementById("hamburger"); 
 // console.log(hamburger); 
-hamburger.addEventListener("click" ,()=>{
-    console.log("clicked to ham");   //need to change ham functionality `
+// const body = document.querySelector('body'); 
+// console.log(body); 
 
-}); 
+// hamburger.addEventListener("click",()=>{
+//     body.classList.add('utility');
+
+// }); 
+

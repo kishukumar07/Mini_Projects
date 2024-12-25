@@ -1,33 +1,135 @@
-body{
- margin: 0;
- padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 
-header{
-width: 100%;
-padding: 0px 20px 0px 20px;
-box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-align-items: center;
-border: 2px solid rgb(99, 0, 204);
+header {
+  width: 100%;
+  padding: 0px 20px 0px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid rgb(99, 0, 204); */
+  background-color: #2a2a2a;
+}
+
+header .navigation {
+  padding-right: 20px;
+  box-sizing: border-box;
+
 
 }
 
-header .navigation{
-padding-right: 20px;
-box-sizing: border-box;
-
+header h2 {
+  color: wheat;
 }
 
-header .navigation a{
+header .navigation a {
 
-   margin: 0 20px 0 20px;  
-   box-sizing: border-box;
+  margin: 0 20px 0 20px;
+  box-sizing: border-box;
 
-  font-size: 18px ; 
+  font-size: 18px;
   text-decoration: none;
-/* border: 1px solid saddlebrown; */
+  /* border: 1px solid saddlebrown; */
+  color: silver;
 
 }
+
+
+.navigation button {
+
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid wheat;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  /* color: cadetblue; */
+  color: wheat;
+  font-weight: 500;
+
+
+
+}
+
+
+
+/*responsive_Nav_part */
+
+
+
+#hamburger{
+ 
+  display: none;
+  
+}
+
+
+@media (max-width:610px) {
+
+  /* on clicking ham burger the  nav code executes ,nav arrises , */
+
+#hamburger{
+  display: inline;
+}
+
+.navigation a,button {
+  display: none;
+}
+
+
+} 
+
+
+
+.utility{
+  @media (max-width:610px) { 
+
+    #hamburger{
+      display: none;
+    }
+
+    .navigation a,button {
+      display: inline;
+    }
+
+    /* code below for full responsive listing of elements in vertical-align */
+  header .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    transition: all 0.2s ease-in-out;
+    background-color: #2a2a2a;
+
+  }
+
+
+  .navigation button {
+    margin-top: 30px;
+  }
+
+  .navigation a {
+    padding: 10px 0 10px 0;
+
+  }
+
+/* code above this is for full responsive listing of elements in vertical-align */
+
+
+  }
+}
+
+
+
+/* ham hides  and on clicking outside the nav / in any element inside the nav it get cosed and ham arrieses  */

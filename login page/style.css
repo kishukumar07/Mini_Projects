@@ -28,11 +28,12 @@ header{
     left: 0px;
     width: 100%;
     padding: 20px 100px;
-    /* background: red; */
+    background-color: #2a2a2a;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+
 }
 
 .logo{
@@ -332,27 +333,6 @@ margin: 25px 0 10px 0;
 }
 
 
-
-
-
-
-
-/* making nav responsive */
-.navigation img{
-  display: none;
-}
-
-@media  ( max-width: 850px) {
-  .navigation a,
-  .navigation button{
-display: none;
-}
-
-.navigation img{ 
-  display: inline;  
-}
-
-  }
 
 
 
