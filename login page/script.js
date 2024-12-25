@@ -26,3 +26,11 @@ iconClose.addEventListener('click', ()=>{
     wrapper.classList.remove('active-popup');  //to add a class active in wrapper.classList
 
 }); 
+
+
+let hamburger = document.getElementById("hamburger"); 
+// console.log(hamburger); 
+hamburger.addEventListener("click" ,()=>{
+    console.log("clicked to ham");   //need to change ham functionality `
+
+}); 

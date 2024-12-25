@@ -337,3 +337,20 @@ margin: 25px 0 10px 0;
 
 
 
+/* making nav responsive */
+.navigation img{
+  display: none;
+}
+
+@media  ( max-width: 850px) {
+  .navigation a,
+  .navigation button{
+display: none;
+}
+
+.navigation img{ 
+  display: inline;  
+}
+
+  }
+
