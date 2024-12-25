@@ -13,7 +13,8 @@ justify-content: center;
 align-items: center;
 min-height: 100vh;
 /* background: url('https://img.freepik.com/free-photo/wild-elk-animal-with-beautiful-nature-landscape_23-2150882414.jpg?t=st=1734872037~exp=1734875637~hmac=9c8b8e5a40801d249f4ebde9d03a6f2d5a39721b2eefd9fbcaebcec9ed6b2c36&w=1060') no-repeat; */
-background: url('https://img.freepik.com/premium-vector/beautiful-winter-landscape-with-dry-beautiful-tree-white-snow-field-mountains-large-drifts-foreground-landscape-background_177886-390.jpg?w=1060') no-repeat ;
+/* background: url('https://img.freepik.com/premium-vector/beautiful-winter-landscape-with-dry-beautiful-tree-white-snow-field-mountains-large-drifts-foreground-landscape-background_177886-390.jpg?w=1060') no-repeat ; */
+background: url('https://img.freepik.com/free-photo/vehicle-defying-laws-physics-by-levitating-atmosphere_23-2151122810.jpg?t=st=1735105294~exp=1735108894~hmac=3fed6dd8893a0053d009f3e56d46429528e9f67747d82d6f78b913e451a7f886&w=996') no-repeat ;
 background-size: cover;
 background-position: center;
 }
@@ -64,7 +65,6 @@ header{
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
-    
     transition : .5s;
 }
 
@@ -330,6 +330,9 @@ margin: 25px 0 10px 0;
 .login-regester p a:hover{
   text-decoration: underline;
 }
+
+
+
 
 
 
