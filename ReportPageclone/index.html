@@ -18,7 +18,7 @@
 
 
         .container {
-            width: 215mm;
+            width: 235mm;
             /* A4 width */
             height: 297mm;
             /* A4 height */
@@ -28,6 +28,7 @@
         }
 
         .header {
+            padding-top: 25px;
             display: flex;
             width: 100%;
             height: 20%;
@@ -38,7 +39,7 @@
 
         body .header> :nth-child(1) {
             mix-blend-mode: multiply;
-            height: 90%;
+            height: 100%;
             width: 17%;
             margin-left: 7px;
             /* border: 2px solid green; */
@@ -119,7 +120,7 @@
         .lapRepoSession {
 
             position: absolute;
-            top: 178%;
+            top: 168%;
             /* Adjust to overlay properly */
             transform: translate(-61%, -87%);
             /* width: 80%; Adjust width */
@@ -128,7 +129,7 @@
             font-size: 18px;
             font-weight: bold;
             height: 274px;
-            width: 203mm;
+            width: 223mm;
             /* border: 1px solid green; */
         }
 
@@ -250,15 +251,19 @@
         /* for 2nd table */
 
         table {
+            /* align-items: center; */
             width: 100%;
             border-collapse: collapse;
-            margin-left: 10px;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding: 0;
         }
         th, td {
             /* border: 1px solid #000; */
             padding: 0px;
-
+   padding-right: 110px;
             text-align: left;
+            
         }
        
         
@@ -277,7 +282,7 @@
                 <h1 class="heading">DEPARTMENT OF <br> LABORATORY MEDICINE</h1>
                 <div class="lapRepoSession">
                     <!-- //this div should overlayed on header div -->
-                    <hr style="border: 1px solid black; margin: 5px ;">
+                    <hr style="border: 1px solid black; margin: 5px; ;">
                     <h4 style="text-align: center; margin: 0; font-weight: bold;">LABORATORY REPORT</h4>
                     <hr style="border: 1px solid black; margin: 5px ;">
                     <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
@@ -313,11 +318,12 @@
         </div>
 
 
-        <div class="maindiv" style="margin-top: 230px;">
-            <hr style="border: 1px solid black; margin: 5px ;">
+        <div class="maindiv" style="margin-top: 230px; margin-left: 10px; padding-right: 10px;">
+
+            <hr style="border: 1px solid black; margin: 5px; ">
             <div id="heading">
                 <h3>Test Description</h3>
-                <h3>Result</h3>
+                <h3 style="margin-left: 35px;">Result</h3>
                 <h3>Units</h3>
                 <h3>Reference Range</h3>
             </div>
@@ -331,12 +337,6 @@
                         <u>Complete Blood Count (CBC) Report</u>
                     </h4>
                     <table>
-                        <tr>
-                            <th>Test Description</th>
-                            <th>Result</th>
-                            <th>Units</th>
-                            <th>Reference Range</th>
-                        </tr>
                         <tr><td>Hemoglobin</td><td>8.9</td><td>g/dL</td><td>13.00 - 17.00</td></tr>
                         <tr><td>RBC Count</td><td>2.65</td><td>mill/mm3</td><td>4.50 - 5.50</td></tr>
                         <tr><td>Packed Cell Volume</td><td>25.6</td><td>%</td><td>-</td></tr>
