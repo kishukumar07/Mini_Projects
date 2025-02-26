@@ -48,7 +48,7 @@
 
         body .header> :nth-child(2) {
             mix-blend-mode: multiply;
-  margin-top: 20px;
+            margin-top: 20px;
             width: 25%;
 
             /* border: 2px solid green; */
@@ -170,7 +170,7 @@
 
         /* footercss */
         .footer {
-            margin-top: 65px;
+            /* margin-top: 65px; */
             width: 100%;
             border-top: 3px solid #0074D9;
             padding-top: 5px;
@@ -247,7 +247,8 @@
         .report-table td span {
             font-weight: normal;
             /* Ensures values are not bold */
-        } 
+        }
+
         /* for 2nd table */
 
         table {
@@ -258,16 +259,15 @@
             margin-right: 15px;
             padding: 0;
         }
-        th, td {
+
+        th,
+        td {
             /* border: 1px solid #000; */
             padding: 0px;
-   padding-right: 110px;
+            padding-right: 110px;
             text-align: left;
-            
         }
-       
-        
-        </style>
+    </style>
 </head>
 
 <body>
@@ -337,35 +337,151 @@
                         <u>Complete Blood Count (CBC) Report</u>
                     </h4>
                     <table>
-                        <tr><td>Hemoglobin</td><td>8.9</td><td>g/dL</td><td>13.00 - 17.00</td></tr>
-                        <tr><td>RBC Count</td><td>2.65</td><td>mill/mm3</td><td>4.50 - 5.50</td></tr>
-                        <tr><td>Packed Cell Volume</td><td>25.6</td><td>%</td><td>40.00 - 50.00</td></tr>
-                        <tr><td>MCV</td><td>96.5</td><td>fL</td><td>80.00-100.00</td></tr>
-                        <tr><td>MCH</td><td>33.7</td><td>pg</td><td>27.00 - 32.00</td></tr>
-                        <tr><td>MCHC</td><td>34.9</td><td>g/dL</td><td>32.00 - 35.00</td></tr>
-                        <tr><td>Red Cell Distribution Width (RDW-CV)</td><td>20.0</td><td>%</td><td>11.00 - 16.00</td></tr>
-                        <tr><td>Red Cell Distribution Width (RDW-SD)</td><td>59.6</td><td>fL</td><td>37.00 - 49.00</td></tr>
-                        <tr><td>Total Leukocyte Count (TLC)</td><td>7.88</td><td>thou/mm3</td><td>3.50 - 10.00</td></tr>
-                        <tr><td>Segmented Neutrophils</td><td>61.5</td><td>%</td><td>40.00 - 80.00</td></tr>
-                        <tr><td>Lymphocytes</td><td>24.7</td><td>%</td><td>20.00 - 40.00</td></tr>
-                        <tr><td>Monocytes</td><td>13.2</td><td>%</td><td>2.00 - 10.00</td></tr>
-                        <tr><td>Eosinophils</td><td>0.3</td><td>%</td><td>1.00 - 6.00</td></tr>
-                        <tr><td>Basophils</td><td>0.3</td><td>%</td><td>&lt;=2.00</td></tr>
-                        <tr><td>Neutrophil</td><td>1.76</td><td>thou/mm3</td><td>1 - 3</td></tr>
-                        <tr><td>Lymphocytes</td><td>0.94</td><td>thou/mm3</td><td>0.20 - 1.00</td></tr>
-                        <tr><td>Monocytes</td><td>0.02</td><td>thou/mm3</td><td>0.02 - 0.50</td></tr>
-                        <tr><td>Eosinophils</td><td>0.02</td><td>thou/mm3</td><td>0.01 - 0.10</td></tr>
-                        <tr><td>Basophils</td><td>0.02</td><td>thou/mm3</td><td>-</td></tr>
-                        <tr><td>Platelet Count</td><td>30</td><td>thou/mm3</td><td>150.00 - 410.00</td></tr>
-                        <tr><td>PCT</td><td>0.05</td><td>%</td><td>0.15 - 0.40</td></tr>
-                        <tr><td>MPV</td><td>13.9</td><td>um3</td><td>8.0 - 11.0</td></tr>
-                        <tr><td>PDW</td><td>18.5</td><td>um3</td><td>11.0 - 22.0</td></tr>
+                        <tr>
+                            <td>Hemoglobin</td>
+                            <td>8.9</td>
+                            <td>g/dL</td>
+                            <td>13.00 - 17.00</td>
+                        </tr>
+                        <tr>
+                            <td>RBC Count</td>
+                            <td>2.65</td>
+                            <td>mill/mm3</td>
+                            <td>4.50 - 5.50</td>
+                        </tr>
+                        <tr>
+                            <td>Packed Cell Volume</td>
+                            <td>25.6</td>
+                            <td>%</td>
+                            <td>40.00 - 50.00</td>
+                        </tr>
+                        <tr>
+                            <td>MCV</td>
+                            <td>96.5</td>
+                            <td>fL</td>
+                            <td>80.00-100.00</td>
+                        </tr>
+                        <tr>
+                            <td>MCH</td>
+                            <td>33.7</td>
+                            <td>pg</td>
+                            <td>27.00 - 32.00</td>
+                        </tr>
+                        <tr>
+                            <td>MCHC</td>
+                            <td>34.9</td>
+                            <td>g/dL</td>
+                            <td>32.00 - 35.00</td>
+                        </tr>
+                        <tr>
+                            <td>Red Cell Distribution Width (RDW-CV)</td>
+                            <td>20.0</td>
+                            <td>%</td>
+                            <td>11.00 - 16.00</td>
+                        </tr>
+                        <tr>
+                            <td>Red Cell Distribution Width (RDW-SD)</td>
+                            <td>59.6</td>
+                            <td>fL</td>
+                            <td>37.00 - 49.00</td>
+                        </tr>
+                        <tr>
+                            <td>Total Leukocyte Count (TLC)</td>
+                            <td>7.88</td>
+                            <td>thou/mm3</td>
+                            <td>3.50 - 10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Segmented Neutrophils</td>
+                            <td>61.5</td>
+                            <td>%</td>
+                            <td>40.00 - 80.00</td>
+                        </tr>
+                        <tr>
+                            <td>Lymphocytes</td>
+                            <td>24.7</td>
+                            <td>%</td>
+                            <td>20.00 - 40.00</td>
+                        </tr>
+                        <tr>
+                            <td>Monocytes</td>
+                            <td>13.2</td>
+                            <td>%</td>
+                            <td>2.00 - 10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Eosinophils</td>
+                            <td>0.3</td>
+                            <td>%</td>
+                            <td>1.00 - 6.00</td>
+                        </tr>
+                        <tr>
+                            <td>Basophils</td>
+                            <td>0.3</td>
+                            <td>%</td>
+                            <td>&lt;=2.00</td>
+                        </tr>
+                        <tr>
+                            <td>Neutrophil</td>
+                            <td>1.76</td>
+                            <td>thou/mm3</td>
+                            <td>1 - 3</td>
+                        </tr>
+                        <tr>
+                            <td>Lymphocytes</td>
+                            <td>0.94</td>
+                            <td>thou/mm3</td>
+                            <td>0.20 - 1.00</td>
+                        </tr>
+                        <tr>
+                            <td>Monocytes</td>
+                            <td>0.02</td>
+                            <td>thou/mm3</td>
+                            <td>0.02 - 0.50</td>
+                        </tr>
+                        <tr>
+                            <td>Eosinophils</td>
+                            <td>0.02</td>
+                            <td>thou/mm3</td>
+                            <td>0.01 - 0.10</td>
+                        </tr>
+                        <tr>
+                            <td>Basophils</td>
+                            <td>0.02</td>
+                            <td>thou/mm3</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Platelet Count</td>
+                            <td>30</td>
+                            <td>thou/mm3</td>
+                            <td>150.00 - 410.00</td>
+                        </tr>
+                        <tr>
+                            <td>PCT</td>
+                            <td>0.05</td>
+                            <td>%</td>
+                            <td>0.15 - 0.40</td>
+                        </tr>
+                        <tr>
+                            <td>MPV</td>
+                            <td>13.9</td>
+                            <td>um3</td>
+                            <td>8.0 - 11.0</td>
+                        </tr>
+                        <tr>
+                            <td>PDW</td>
+                            <td>18.5</td>
+                            <td>um3</td>
+                            <td>11.0 - 22.0</td>
+                        </tr>
                     </table>
 
                 </div>
 
                 <div class="bottomvro" style="width: 70%; margin: 0 auto; text-align:center;">
 
+                    
                     <hr style="border: 1px solid rgb(180, 176, 176); width: 100%; margin: 5px auto;">
                 </div>
 
@@ -375,6 +491,11 @@
         </div>
         <!-- <div class="page-info">Page 1 of 2</div> -->
         <!-- footer -->
+        <div class="duration"; style=" display: flex; align-items: center; justify-content: space-between;
+         /* border: 1px solid firebrick; */
+          margin-top: 65px;"><h6 style="margin: 0px; padding-left: 20px;">manorama <br> Generated On : day-0m-yr , hr:min</h6> 
+            <h6 style="margin: 0px; padding-left: 20px; padding-right: 20px;">Page 1 of 2</h6> 
+        </div>
         <div class="footer">
             <div class="left-section">
                 <div class="contact-info">
@@ -389,12 +510,17 @@
                 </div>
             </div>
 
-            <div class="right-section">
+            <div class="right-section" style="display: flex; align-items: center; justify-content: space-around;">
+                <img src="https://i.pinimg.com/736x/e2/fc/86/e2fc86a28708bc2eb670034e337be515.jpg"
+                alt="Phone" class="icon">
+                <div class="texts" style="padding-left: 10px;">
+                    <div >Approved By:</div>
 
-                <div class="approved">Approved By:</div>
-                <div class="signature">Dr. P Prasad</div>
-                <div>MBBS MD</div>
-                <div>www.rajhospitals.com</div>
+                    <div class="signature">Dr. P Prasad</div>
+                    <div>MBBS MD</div>
+                    <div>www.rajhospitals.com</div>
+                </div>
+                
             </div>
 
         </div>
