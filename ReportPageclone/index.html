@@ -1,162 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report</title>
-<style> 
-body {  
-margin: 0px;
-padding: 0px;
-display: flex;
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            box-sizing: border-box;
 
-justify-content: center;
-box-sizing: border-box;
-
-}
-
-
-.container{
-    width: 210mm;  /* A4 width */
-    height: 297mm; /* A4 height */
-    background-color: rgb(255, 255, 255);
-    border: 5px solid red;
-    box-sizing: border-box;
-}
-.header{
-    display: flex;
-width: 100%;
-height: 20%;
-align-items: center;
-box-sizing: border-box; 
-border: 2px solid green;
-}
-
-body .header > :nth-child(1) {
-    mix-blend-mode: multiply;
-   height: 90%;
-   width: 17%;
-margin-left: 7px;
-   border: 2px solid green;
-  
-}
-
-body .header > :nth-child(2)  {
-    mix-blend-mode: multiply;
-
-    width: 25%;
-  
-    border: 2px solid green;
-}
-
-body .header > :nth-child(3)  {
-    mix-blend-mode: multiply;
-padding-left: 8px;
-    width: 16%;
-    border: 2px solid green;
-}
-
-#labtext > img  {
-width: 100%;
-margin-top: 10px;
-opacity: 0.5; /* Adjust from 0 (fully transparent) to 1 (fully visible) */
-border: 2px solid green;
-width: 100%;
-display: block; /* Removes extra space below inline elements */
-}
-
-/* heading on image  */
-#labtext {
-    position: relative;
-    display: inline-block; /* Ensures the div wraps the image naturally */
-    width: 100%;
-}
+        }
 
 
-#labtext .heading {
-    position: absolute;
-    top: 45%; /* Center vertically */
-    left: 55%; /* Center horizontally */
-    transform: translate(-50%, -50%);
-    color: black;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 5px 15px; /* Adjust padding */
-    border-radius: 5px;
-    line-height: 1.2; /* Reduces space between lines */
-    white-space: normal; /* Allows wrapping */
-    display: inline-block;
-    width: max-content; /* Ensures width only as per content */
-}
+        .container {
+            width: 215mm;
+            /* A4 width */
+            height: 297mm;
+            /* A4 height */
+            background-color: rgb(255, 255, 255);
+            border: 5px solid red;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            width: 100%;
+            height: 20%;
+            align-items: center;
+            box-sizing: border-box;
+            /* border: 2px solid green; */
+        }
+
+        body .header> :nth-child(1) {
+            mix-blend-mode: multiply;
+            height: 90%;
+            width: 17%;
+            margin-left: 7px;
+            /* border: 2px solid green; */
+
+        }
+
+        body .header> :nth-child(2) {
+            mix-blend-mode: multiply;
+
+            width: 25%;
+
+            /* border: 2px solid green; */
+        }
+
+        body .header> :nth-child(3) {
+            mix-blend-mode: multiply;
+            padding-left: 8px;
+            width: 16%;
+            /* border: 2px solid green; */
+        }
+
+        #labtext>img {
+            width: 100%;
+            margin-top: 10px;
+            opacity: 0.5;
+            /* Adjust from 0 (fully transparent) to 1 (fully visible) */
+            /* border: 2px solid green; */
+            width: 100%;
+            display: block;
+            /* Removes extra space below inline elements */
+        }
+
+        /* heading on image  */
+        #labtext {
+            position: relative;
+            display: inline-block;
+            /* Ensures the div wraps the image naturally */
+            width: 100%;
+        }
 
 
-/* .lapRepoSession{
+        #labtext .heading {
+            position: absolute;
+            top: 45%;
+            /* Center vertically */
+            left: 55%;
+            /* Center horizontally */
+            transform: translate(-50%, -50%);
+            color: black;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 5px 15px;
+            /* Adjust padding */
+            border-radius: 5px;
+            line-height: 1.2;
+            /* Reduces space between lines */
+            white-space: normal;
+            /* Allows wrapping */
+            display: inline-block;
+            width: max-content;
+            /* Ensures width only as per content */
+        }
+
+
+        /* .lapRepoSession{
 
 } */
 
-/* css for 2nd part  */
+        /* css for 2nd part  */
 
-.header {
-    position: relative; /* Parent for absolute positioning */
-    display: flex;
-    padding-bottom: 10px;
-}
+        .header {
+            position: relative;
+            /* Parent for absolute positioning */
+            display: flex;
+            padding-bottom: 10px;
+        }
 
-.lapRepoSession {
+        .lapRepoSession {
 
-    position: absolute;
-    top: 185%;  /* Adjust to overlay properly */
-    transform: translate(-61%, -80%);
-    /* width: 80%; Adjust width */
-    padding: 10px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    border: 2px solid blue; /* Just to visualize */
-
-
- height: 300px;
- width: 203mm;
-
-}
+            position: absolute;
+            top: 178%;
+            /* Adjust to overlay properly */
+            transform: translate(-61%, -87%);
+            /* width: 80%; Adjust width */
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            height: 274px;
+            width: 203mm;
+            /* border: 1px solid green; */
+        }
 
 
-</style>
+
+        /* styling the div */
+
+        #heading {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 50px;
+            margin-left: 20px;
+        }
+
+        #heading>h3 {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .maindiv {
+            /* border: 2px solid green; */
+            height: 500px;
+            margin-left: 5px;
+
+        }
+
+
+        .data{
+            /* border: 1px solid yellow; */
+            display: flex;
+    flex-direction: column;
+    min-height: 95%; /* Ensures it takes full height */
+justify-content: space-between;
+        }
+
+
+        /* footercss */
+        .footer {
+            margin-top: 65px;
+            width: 100%;
+            border-top: 3px solid #0074D9;
+            padding-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            position: relative;
+        }
+
+        
+        .left-section {
+            display: flex;
+            align-items: center;
+            gap: 110px;
+        }
+  
+        .icon {
+            width: 20px;
+            height: 20px;
+        }
+
+
+        .right-section {
+            text-align: right;
+            margin-right: 30px;
+        }
+        .approved {
+            font-weight: bold;
+        }
+
+        .signature {
+            font-size: 18px;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        .page-info {
+            font-size: 12px;
+            position: absolute;
+            right: 10px;
+            bottom: 0;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+
+
+    </style>
 </head>
+
 <body>
-    <div class="container"> 
+    <div class="container">
         <div class="header">
             <img src="./img/Screenshot 2025-02-26 121822.png" alt="">
             <img src="./img/Screenshot 2025-02-26 121826.png" alt="">
-       <img src="./img/nabh-accredited-seeklogo.png" alt="">
+            <img src="./img/nabh-accredited-seeklogo.png" alt="">
 
-       <div id="labtext"> 
-        <img src="./img/—Pngtree—gradient abstract hexagon blue business_5384935.png" alt="">
-        <h1 class="heading">DEPARTMENT OF <br> LABORATORY MEDICINE</h1>
-        <div class="lapRepoSession">  
-            <!-- //this div should overlayed on header div -->
-       
-           line 1 ->> text ->>line 2 ->>table1 || table 2 
-           
+            <div id="labtext">
+                <img src="./img/—Pngtree—gradient abstract hexagon blue business_5384935.png" alt="">
+                <h1 class="heading">DEPARTMENT OF <br> LABORATORY MEDICINE</h1>
+                <div class="lapRepoSession">
+                    <!-- //this div should overlayed on header div -->
+                    <hr style="border: 1px solid black; margin: 5px ;">
+                    <h4 style="text-align: center; margin: 0; font-weight: bold;">LABORATORY REPORT</h4>
+                    <hr style="border: 1px solid black; margin: 5px ;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+                        <!-- have to complete first table  -->
+                    </table>
+
+                </div>
+            </div>
         </div>
+
+
+        <div class="maindiv" style="margin-top: 230px;">
+            <hr style="border: 1px solid black; margin: 5px ;">
+            <div id="heading">
+                <h3>Test Description</h3>
+                <h3>Result</h3>
+                <h3>Units</h3>
+                <h3>Reference Range</h3>
+            </div>
+            <hr style="border: 1px solid black; margin: 5px ;">
+
+
+            <div class="data">
+                <div class="tablewala">
+   <!-- here the data talble will be written  -->
+
+
+
+       </div>
+
+    <div class="bottomvro" style="width: 70%; margin: 0 auto; text-align: center;">
+     
+        <hr style="border: 1px solid rgb(180, 176, 176); width: 100%; margin: 5px auto;">
     </div>
+    
+    
+    
+</div>
+
+
+
+</div>
+
+<!-- <div class="page-info">Page 1 of 2</div> -->
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="left-section">
+            <div class="contact-info">
+                <img src="https://static.vecteezy.com/system/resources/previews/026/122/508/non_2x/pin-icon-location-sign-in-flat-style-isolated-on-orange-background-navigation-map-gps-concept-vector.jpg" alt="Location" class="icon">
+                <span>Main Road, Ranchi, <br> Jharkhand - 834001</span>
+            </div>
+            <div class="contact-info">
+                <img src="https://png.pngtree.com/png-vector/20221118/ourmid/pngtree-orange-phone-icon-for-contact-and-support-services-vector-png-image_41140626.jpg" alt="Phone" class="icon">
+                <span>+91 9771488888</span>
+            </div>
         </div>
-        
-        
- <div class="maindiv">  //this next after lapRepoSession
+    
+        <div class="right-section">
 
-    line 1 ->> text ->>line 2 ->>table1 ->>ends with the line 3
-
- </div>
-
-
-
-
-
-
+            <div class="approved">Approved By:</div>
+            <div class="signature">Dr. P Prasad</div>
+            <div>MBBS MD</div>
+            <div>www.rajhospitals.com</div>
+        </div>
+    
     </div>
+  
 
 
 
 </body>
+
 </html>
