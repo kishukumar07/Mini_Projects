@@ -183,7 +183,7 @@ justify-content: space-between;
         .left-section {
             display: flex;
             align-items: center;
-            gap: 110px;
+            gap: 173px;
         }
   
         .icon {
@@ -221,6 +221,24 @@ justify-content: space-between;
 
 
 
+/* css for table 1 */
+.report-table {
+            width: 100%;
+            border-collapse: separate; /* Allows spacing */
+            border-spacing: 10px; /* Adds gap between cells */
+        }
+        .report-table td {
+            padding: 3px;
+            text-align: left;
+        }
+        .report-table td strong {
+            display: inline-block;
+            min-width: 180px; /* Adjust space between label and value */
+        }
+        .report-table td span {
+            font-weight: normal; /* Ensures values are not bold */
+        }
+
     </style>
 </head>
 
@@ -241,8 +259,32 @@ justify-content: space-between;
                     <hr style="border: 1px solid black; margin: 5px ;">
                     <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
                         <!-- have to complete first table  -->
-                    </table>
-
+                        <table class="report-table">
+                            <tr>
+                                <td><strong>Lab Id</strong>: <span>BL049058</span></td>
+                                <td><strong>Specimen</strong>: <span>BLOOD</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>MR No</strong>: <span>UH0000000106198</span></td>
+                                <td><strong>Collect On</strong>: <span>22-11-2024 05:00</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Name</strong>: <span>Ms. ASIMA KUMARI</span></td>
+                                <td><strong>Visit ID</strong>: <span>RH000000048410</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Age/Gender</strong>: <span>60 Y/F</span></td>
+                                <td><strong>Report Date & Time</strong>: <span>27-11-2024 17:09</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Prescribing Doctor</strong>: <span>Dr. Vijay Raj</span></td>
+                                <td><strong>Report Status</strong>: <span>Final</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bed No</strong>: <span>ICU/321</span></td>
+                                <td></td>
+                            </tr>
+                        </table>
                 </div>
             </div>
         </div>
@@ -264,7 +306,6 @@ justify-content: space-between;
    <!-- here the data talble will be written  -->
 
 
-
        </div>
 
     <div class="bottomvro" style="width: 70%; margin: 0 auto; text-align: center;">
@@ -272,23 +313,17 @@ justify-content: space-between;
         <hr style="border: 1px solid rgb(180, 176, 176); width: 100%; margin: 5px auto;">
     </div>
     
-    
-    
 </div>
 
 
-
 </div>
-
 <!-- <div class="page-info">Page 1 of 2</div> -->
-
-
     <!-- footer -->
     <div class="footer">
         <div class="left-section">
             <div class="contact-info">
                 <img src="https://static.vecteezy.com/system/resources/previews/026/122/508/non_2x/pin-icon-location-sign-in-flat-style-isolated-on-orange-background-navigation-map-gps-concept-vector.jpg" alt="Location" class="icon">
-                <span>Main Road, Ranchi, <br> Jharkhand - 834001</span>
+                <span>Main Road, Ranchi , <br> Jharkhand - 834001</span>
             </div>
             <div class="contact-info">
                 <img src="https://png.pngtree.com/png-vector/20221118/ourmid/pngtree-orange-phone-icon-for-contact-and-support-services-vector-png-image_41140626.jpg" alt="Phone" class="icon">
