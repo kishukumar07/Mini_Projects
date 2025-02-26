@@ -157,12 +157,13 @@
         }
 
 
-        .data{
+        .data {
             /* border: 1px solid yellow; */
             display: flex;
-    flex-direction: column;
-    min-height: 95%; /* Ensures it takes full height */
-justify-content: space-between;
+            flex-direction: column;
+            min-height: 95%;
+            /* Ensures it takes full height */
+            justify-content: space-between;
         }
 
 
@@ -179,13 +180,13 @@ justify-content: space-between;
             position: relative;
         }
 
-        
+
         .left-section {
             display: flex;
             align-items: center;
             gap: 173px;
         }
-  
+
         .icon {
             width: 20px;
             height: 20px;
@@ -196,6 +197,7 @@ justify-content: space-between;
             text-align: right;
             margin-right: 30px;
         }
+
         .approved {
             font-weight: bold;
         }
@@ -221,25 +223,46 @@ justify-content: space-between;
 
 
 
-/* css for table 1 */
-.report-table {
+        /* css for table 1 */
+        .report-table {
             width: 100%;
-            border-collapse: separate; /* Allows spacing */
-            border-spacing: 10px; /* Adds gap between cells */
+            border-collapse: separate;
+            /* Allows spacing */
+            border-spacing: 10px;
+            /* Adds gap between cells */
         }
+
         .report-table td {
             padding: 3px;
             text-align: left;
         }
+
         .report-table td strong {
             display: inline-block;
-            min-width: 180px; /* Adjust space between label and value */
-        }
-        .report-table td span {
-            font-weight: normal; /* Ensures values are not bold */
+            min-width: 180px;
+            /* Adjust space between label and value */
         }
 
-    </style>
+        .report-table td span {
+            font-weight: normal;
+            /* Ensures values are not bold */
+        } 
+        /* for 2nd table */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-left: 10px;
+        }
+        th, td {
+            /* border: 1px solid #000; */
+            padding: 0px;
+
+            text-align: left;
+        }
+       
+        
+        </style>
 </head>
 
 <body>
@@ -303,44 +326,77 @@ justify-content: space-between;
 
             <div class="data">
                 <div class="tablewala">
-   <!-- here the data talble will be written  -->
+                    <!-- here the data talble will be written  -->
+                    <h4 style="margin: 0; padding: 0px; text-align: center;">Complete Blood Count (CBC) Report</h4>
+                    <table>
+                        <tr>
+                            <th>Test Description</th>
+                            <th>Result</th>
+                            <th>Units</th>
+                            <th>Reference Range</th>
+                        </tr>
+                        <tr><td>Hemoglobin</td><td>8.9</td><td>g/dL</td><td>13.00 - 17.00</td></tr>
+                        <tr><td>RBC Count</td><td>2.65</td><td>mill/mm3</td><td>4.50 - 5.50</td></tr>
+                        <tr><td>Packed Cell Volume</td><td>25.6</td><td>%</td><td>-</td></tr>
+                        <tr><td>MCV</td><td>96.5</td><td>fL</td><td>40.00 - 50.00</td></tr>
+                        <tr><td>MCH</td><td>33.7</td><td>pg</td><td>27.00 - 32.00</td></tr>
+                        <tr><td>MCHC</td><td>34.9</td><td>g/dL</td><td>32.00 - 35.00</td></tr>
+                        <tr><td>Red Cell Distribution Width (RDW-CV)</td><td>20.0</td><td>%</td><td>11.00 - 16.00</td></tr>
+                        <tr><td>Red Cell Distribution Width (RDW-SD)</td><td>59.6</td><td>fL</td><td>37.00 - 49.00</td></tr>
+                        <tr><td>Total Leukocyte Count (TLC)</td><td>7.88</td><td>thou/mm3</td><td>3.50 - 10.00</td></tr>
+                        <tr><td>Segmented Neutrophils</td><td>61.5</td><td>%</td><td>40.00 - 80.00</td></tr>
+                        <tr><td>Lymphocytes</td><td>24.7</td><td>%</td><td>20.00 - 40.00</td></tr>
+                        <tr><td>Monocytes</td><td>13.2</td><td>%</td><td>2.00 - 10.00</td></tr>
+                        <tr><td>Eosinophils</td><td>0.3</td><td>%</td><td>1.00 - 6.00</td></tr>
+                        <tr><td>Basophils</td><td>0.3</td><td>%</td><td>&lt;=2.00</td></tr>
+                        <tr><td>Neutrophil</td><td>1.76</td><td>thou/mm3</td><td>1 - 3</td></tr>
+                        <tr><td>Lymphocytes</td><td>0.94</td><td>thou/mm3</td><td>0.20 - 1.00</td></tr>
+                        <tr><td>Monocytes</td><td>0.02</td><td>thou/mm3</td><td>0.02 - 0.50</td></tr>
+                        <tr><td>Eosinophils</td><td>0.02</td><td>thou/mm3</td><td>0.01 - 0.10</td></tr>
+                        <tr><td>Basophils</td><td>0.02</td><td>thou/mm3</td><td>-</td></tr>
+                        <tr><td>Platelet Count</td><td>30</td><td>thou/mm3</td><td>150.00 - 410.00</td></tr>
+                        <tr><td>PCT</td><td>0.05</td><td>%</td><td>0.15 - 0.40</td></tr>
+                        <tr><td>MPV</td><td>13.9</td><td>um3</td><td>8.0 - 11.0</td></tr>
+                        <tr><td>PDW</td><td>18.5</td><td>um3</td><td>11.0 - 22.0</td></tr>
+                    </table>
 
+                </div>
 
-       </div>
+                <div class="bottomvro" style="width: 70%; margin: 0 auto; text-align:center;">
 
-    <div class="bottomvro" style="width: 70%; margin: 0 auto; text-align: center;">
-     
-        <hr style="border: 1px solid rgb(180, 176, 176); width: 100%; margin: 5px auto;">
-    </div>
-    
-</div>
+                    <hr style="border: 1px solid rgb(180, 176, 176); width: 100%; margin: 5px auto;">
+                </div>
 
-
-</div>
-<!-- <div class="page-info">Page 1 of 2</div> -->
-    <!-- footer -->
-    <div class="footer">
-        <div class="left-section">
-            <div class="contact-info">
-                <img src="https://static.vecteezy.com/system/resources/previews/026/122/508/non_2x/pin-icon-location-sign-in-flat-style-isolated-on-orange-background-navigation-map-gps-concept-vector.jpg" alt="Location" class="icon">
-                <span>Main Road, Ranchi , <br> Jharkhand - 834001</span>
             </div>
-            <div class="contact-info">
-                <img src="https://png.pngtree.com/png-vector/20221118/ourmid/pngtree-orange-phone-icon-for-contact-and-support-services-vector-png-image_41140626.jpg" alt="Phone" class="icon">
-                <span>+91 9771488888</span>
-            </div>
-        </div>
-    
-        <div class="right-section">
 
-            <div class="approved">Approved By:</div>
-            <div class="signature">Dr. P Prasad</div>
-            <div>MBBS MD</div>
-            <div>www.rajhospitals.com</div>
+
         </div>
-    
-    </div>
-  
+        <!-- <div class="page-info">Page 1 of 2</div> -->
+        <!-- footer -->
+        <div class="footer">
+            <div class="left-section">
+                <div class="contact-info">
+                    <img src="https://static.vecteezy.com/system/resources/previews/026/122/508/non_2x/pin-icon-location-sign-in-flat-style-isolated-on-orange-background-navigation-map-gps-concept-vector.jpg"
+                        alt="Location" class="icon">
+                    <span>Main Road, Ranchi , <br> Jharkhand - 834001</span>
+                </div>
+                <div class="contact-info">
+                    <img src="https://png.pngtree.com/png-vector/20221118/ourmid/pngtree-orange-phone-icon-for-contact-and-support-services-vector-png-image_41140626.jpg"
+                        alt="Phone" class="icon">
+                    <span>+91 9771488888</span>
+                </div>
+            </div>
+
+            <div class="right-section">
+
+                <div class="approved">Approved By:</div>
+                <div class="signature">Dr. P Prasad</div>
+                <div>MBBS MD</div>
+                <div>www.rajhospitals.com</div>
+            </div>
+
+        </div>
+
 
 
 
