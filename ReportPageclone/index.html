@@ -90,9 +90,35 @@ display: block; /* Removes extra space below inline elements */
 }
 
 
+/* .lapRepoSession{
+
+} */
+
+/* css for 2nd part  */
+
+.header {
+    position: relative; /* Parent for absolute positioning */
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.lapRepoSession {
+
+    position: absolute;
+    top: 185%;  /* Adjust to overlay properly */
+    transform: translate(-61%, -80%);
+    /* width: 80%; Adjust width */
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid blue; /* Just to visualize */
 
 
+ height: 300px;
+ width: 203mm;
 
+}
 
 
 </style>
@@ -107,9 +133,26 @@ display: block; /* Removes extra space below inline elements */
        <div id="labtext"> 
         <img src="./img/—Pngtree—gradient abstract hexagon blue business_5384935.png" alt="">
         <h1 class="heading">DEPARTMENT OF <br> LABORATORY MEDICINE</h1>
+        <div class="lapRepoSession">  
+            <!-- //this div should overlayed on header div -->
+       
+           line 1 ->> text ->>line 2 ->>table1 || table 2 
+           
+        </div>
     </div>
-    
-        </div> 
+        </div>
+        
+        
+ <div class="maindiv">  //this next after lapRepoSession
+
+    line 1 ->> text ->>line 2 ->>table1 ->>ends with the line 3
+
+ </div>
+
+
+
+
+
 
     </div>
 
